@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+.row__poster::-webkit-scrollbar {
+  width: 0 !important;
+}
+.row__poster {
+  overflow: -moz-scrollbars-none;
+}
+.row {
+  color: white;
+  margin-left: 25px;
+  margin-top: 45px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.posterContainer {
+  position: relative;
+}
+
+
+
+.larrow {
+  position: absolute;
+  top: 75px;
+  cursor: pointer;
+  font-size: 25px;
+  opacity: 0;
+  z-index:2;
+
+}
+
+.rarrow {
+  position: absolute;
+  top: 75px;
+  right: 25px;
+  cursor: pointer;
+  font-size: 25px;
+  opacity: 0;
+  z-index:2;
+}
+
+.posterContainer:hover .larrow {
+  opacity: 70%;
+}
+.posterContainer:hover .rarrow {
+  opacity: 70%;
+}
+
+
+
+.row__posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+  gap: 5px;
+  scrollbar-width: none;
+  padding-left: 35px;
+  scroll-behavior: smooth;
+}
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__posters img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+.poster {
+  position: relative;
+  text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  border: 2px;
+  padding: 2px;
+}
+
+.posterContent {
+  position: absolute;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.4px);
+  -webkit-backdrop-filter: blur(14.4px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  bottom: -12px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row__poster {
+  min-height: 8rem;
+  min-width: 13rem;
+  max-height: 100px;
+  object-fit: contain;
+  margin-right: 15px;
+  transition: transform 450ms;
+  padding: 2px;
+  box-shadow: 0 0 40px rgba(7, 15, 16, 0.6);
+  /* From https://css.glass */
+  border: 1px;
+  background: linear-gradient(
+    to right,
+    rgba(234, 0, 255, 0.486),
+    rgba(10, 96, 255, 0.671)
+  );
+}
+
+.row__poster:hover {
+  transform: scale(1.08);
+  opacity: 1;
+}
+
+.row__posterLarge {
+  max-height: 250px;
+  min-width: 10rem;
+}
+.posterLarge {
+  min-width: 10rem;
+}
+
+.row__posterLarge:hover {
+  transform: scale(1.09);
+  opacity: 1;
+}

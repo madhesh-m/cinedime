@@ -1,0 +1,66 @@
+.Details {
+  user-select: none;
+  position: relative;
+}
+
+.detailsTitle {
+  font-family: "Elephant";
+  font-size: 5rem;
+  color: white;
+  margin-bottom: 35px;
+}
+
+.detailsCover {
+  height: 100vh;
+}
+
+.overview{
+    font-size: 22px;
+    color:white;
+    margin:3rem;
+}
+
+.leftDetails{
+    opacity: 0;
+    position: absolute;
+    top:0rem;
+    right:0rem;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.651);
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: ease-in-out 1s;
+}
+.leftDetails:hover{
+    opacity: 1;
+}
+
+.detailsExtended{
+    height: 25rem;
+    width: 15rem;
+    object-fit: cover;
+}
+.detailsContents {
+  position: absolute;
+  bottom: 45px;
+  left: 70px;
+}
+.detailsbtn {
+  border: 2px solid black;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 25px;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 255, 0.685);
+}
+
+.detailsbtn:hover {
+  color: white;
+  background-color: rgba(36, 36, 36, 0.685);
+  border: 2px solid white;
+}

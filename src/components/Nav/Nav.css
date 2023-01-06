@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+.nav {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  width: 100%;
+  height: 20px;
+  z-index: 100;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  background: linear-gradient(89.7deg, rgb(0, 0, 0) -10.7%, rgb(53, 92, 125) 88.8%);
+}
+.leftContent{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.nav__contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav .leftContent p{
+position: fixed;
+top:5px;
+text-decoration: none;
+color: aliceblue;
+}
+
+.nav__black {
+  background-color: rgba(36, 36, 36, 0.685);
+  backdrop-filter: blur(1px);
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 40px rgba(8,7,16,0.6);
+  width: 100%;
+  height: 30px;
+}
+
+.nav__logo {
+  position: fixed;
+  top: 6px;
+  left: 0;
+  width: 60px;
+  object-fit: contain;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.nav__avatar {
+  cursor: pointer;
+  position: fixed;
+  right: 45px;
+  width: 30px;
+}
